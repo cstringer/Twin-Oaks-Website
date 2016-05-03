@@ -1,0 +1,72 @@
+* {
+ margin:0px;
+ /*padding:0px;*/
+ border-spacing:0px;
+}
+
+a:link,
+a:active,
+a:visited {
+ color:#006000;
+ }
+
+a:hover {
+ color:#009900;
+ text-shadow:1px 1px 1px #eee;
+ }
+
+body {
+ width:768px;
+ margin:0 auto;
+ border:0;
+ font-family:Georgia,"Times New Roman",serif;
+ font-size:1.1em;
+ }
+
+pre {
+ font-size:0.7em;
+ }
+
+table {
+ margin:0px;
+ padding:0px;
+ border-spacing:0px;
+ }
+
+img {
+ border:0;
+ }
+
+h1,h2,h3 {
+ color:#ffffff;
+ background-image:url('http://twinoaksgolf.us/img/header-bg.jpg');
+ background-repeat:repeat-y;
+ border-top-left-radius:6px;
+ border-bottom-left-radius:6px;
+ margin:12px;
+ margin-top:16px;
+ padding-top:5px;
+ padding-left:7px;
+ padding-right:0px;
+ font-family:Helvetica,Verdana,Arial,sans-serif;
+ text-shadow:2px 1px 0px #303030;
+ }
+
+p {
+ max-width:450px;
+ margin-top:0px;
+ margin-bottom:0px;
+ margin-left:10px;
+ margin-right:10px;
+ padding-left:30px;
+ padding-right:30px;
+ padding-bottom:0.6em;
+ padding-top:1em;
+ border-width:0px;
+ /*border-left:1px;*/
+ border-style:solid;
+ border-color:#e0e9e0;
+ text-align:justify;
+ line-height:120%;
+ color:#000;
+ }
