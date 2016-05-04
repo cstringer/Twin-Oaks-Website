@@ -1,0 +1,13 @@
+#ErrorDocument 404 /index.html 
+Options FollowSymLinks
+
+RewriteEngine On
+
+#RewriteCond %{HTTP_HOST} chrisstringer
+#RewriteRule ^.*$ http://www.chrisstringer.us [R]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?sec=$1
+RewriteRule ^(.*)/\?(.*)$ index.php?sec=$1&$2
+

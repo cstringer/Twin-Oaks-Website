@@ -40,7 +40,7 @@
 	{
 	color:#777;
 	margin:20px;
-	margin-left:100px;
+	margin-left:10px;
 	font-style:italic;
 	font-family:sans-serif;
 	font-size:0.9em;
@@ -147,6 +147,7 @@
 #menubar 
 	{
 	width:100%;
+	max-width:1024px;
 	margin:0;
 	padding:0;
 	border-spacing:0;
@@ -159,20 +160,19 @@
  padding:0;
 }
 
-#menubar li
-	{
+#menubar li {
 	display:inline-block;
-	width:32%;
+	width:15%;
+	margin-right:-5px;
 	list-style-type:none;
 	vertical-align:bottom;
 	background:linear-gradient(0deg,#ddd,#fff);
-	border:1px solid #eee;
-	border-radius:5px 5px 0 0;
+	border-bottom:1px solid #ccc;
 	text-indent:0;
 	text-shadow:1px 1px 0 #fff;
 	}
 #menubar li:hover {
- background:#eee;
+ background:#fff;
 }
 
 #menubar .down-arrow
@@ -185,9 +185,11 @@
 
 #menubar a
 	{
-	padding:4px;
+	padding:5px;
 	display:block;
 	text-decoration:none;
+	text-align:center;
+	line-height:2em;
 	}
 
 #menubar a:link
@@ -217,7 +219,6 @@
 }
 
 #menubar .submenu {
- min-width:240px;
  display:none;
 }
 #menubar li:hover .submenu {
@@ -237,9 +238,13 @@
 }
 #menubar .submenu li {
  display:block;
+ width:100%;
  border:none;
  background:none;
  text-align:left;
+}
+#menubar .submenu li:hover {
+ background:#fff;
 }
 
 .cursec
@@ -259,12 +264,11 @@
 #footer
 	{
 	width:auto;
-	margin:auto;
-	margin-top:10px;
+	margin:2em auto 0;
 	padding:10px;
 	border:none;
 	color:#fff;
-	background-color:rgba(0,0,0,0.5);
+	background-color:rgba(0,0,0,0.75);
 	text-shadow:2px 1px 0px #000;
 	text-align:center;
 	font-family:Courier New;
@@ -573,7 +577,7 @@
 @media (max-width:566px) {
  #menubar,
  #content {
-  width:98%;
+  width:100%;
  }
  h3 {
   margin-right:0;
@@ -595,19 +599,18 @@
  }
 
  #menubar > li {
-  width:90%;
+  width:99%;
 	height:42px;
-	padding-left:2em;
   border-right:2px solid #eee;
   text-align:left;
 	line-height:40px;
  }
  #menubar .submenu {
-	width:100%;
+	width:95% !important;
   margin-top:-2px !important;
  }
  #menubar .submenu li {
-	width:100%;
+	width:100% !important;
  }
  #titlebar h1 {
   padding:18px 0 0;
@@ -649,7 +652,7 @@
  }
 
  #fb-like {
-  width:auto;
+  width:100%;
  }
 
  .pricelist {
