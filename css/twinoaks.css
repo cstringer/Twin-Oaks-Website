@@ -1,0 +1,82 @@
+* {
+    margin:0px;
+    /*padding:0px;*/
+    border-spacing:0px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link,
+a:active,
+a:visited {
+    color:#006000;
+}
+
+a:hover {
+    color:#009900;
+    text-shadow:1px 1px 1px #eee;
+}
+
+body {
+    border:0;
+    font-family:"Century Schoolbook",Georgia,"Times New Roman",serif;
+    font-size:1.1em;
+    background-image: linear-gradient(0deg, rgba(255,255,255,0.75), rgba(255,255,255,1.0)),
+                      url('/img/TO-footer.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 100% auto;
+}
+
+pre {
+    font-size:0.7em;
+}
+
+table {
+    margin:0px;
+    padding:0px;
+    border-spacing:0px;
+}
+
+img {
+    border:0;
+}
+
+h1,h2,h3 {
+    color:#444;
+    /*
+    background-color:#035;
+    background:linear-gradient(90deg,#035,#fff);
+    background:-webkit-gradient(linear,left top,right top,from(#035),to(#fff));
+    background-repeat:repeat-y;
+    text-shadow:2px 1px 0px #303030;
+    */
+    margin:4px 0;
+    padding:10px 0 0 7px;
+    font-family:Helvetica,Verdana,Arial,sans-serif;
+    font-weight: bolder;
+}
+
+h2 {
+    color: #151;
+}
+
+p {
+    margin-left:10px;
+    margin-right:10px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:0.6em;
+    padding-top:1em;
+    border-width:0px;
+    /*border-left:1px;*/
+    border-style:solid;
+    border-color:#e0e9e0;
+    line-height:120%;
+    color:#000;
+    font-size:1.1em;
+}

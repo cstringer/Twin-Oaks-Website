@@ -13,28 +13,18 @@
 /* Includes */
 require_once ("utilfuncs.php");
 
-/* Load database config */
-//$CfgDir = "/var/chroot/home/content/16/9298216/cfg";
-//$CfgFile = $CfgDir . "/twinoaks.cfg";
+/* Database config */
 $DbName = "twinoaks";
 $DbSrv = "127.0.0.1";
-$DbUname = "chris";
-$DbPswd =  "pocket42";
-/*
-if (file_exists ($CfgFile) != FALSE)
+$DbUname = "drumchartsql";
+$DbPswd =  "RimShot1976!";
+if ($_SERVER["HTTP_HOST"] != "twinoaks.minidoc.local")
 	{
-	$fh = fopen ($CfgFile, 'r');
-	$cfg = fgetcsv ($fh, 512);
-	if ($cfg != NULL && $cfg != FALSE)
-		{
-		$DbName =  $cfg[0];
-		$DbSrv =   $cfg[1];
-		$DbUname = $cfg[2];
-		$DbPswd =  $cfg[3];
-		}
-	fclose ($fh);
+    $DbName = "twinoaks";
+    $DbSrv = "50.63.226.185";
+    $DbUname = "twinoaks";
+    $DbPswd =  "Love2Golf!";
 	}
-*/
 
 /* ===========================================
 

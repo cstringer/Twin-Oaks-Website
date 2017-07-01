@@ -18,7 +18,7 @@ $Menu = array();
 date_default_timezone_set("America/Chicago");
 
 // set error reporting level
-error_reporting (E_ALL);
+error_reporting (0);
 
 // connect to MySQL database
 $Msq = db_connect ($Err);
