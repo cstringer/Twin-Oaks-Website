@@ -21,15 +21,15 @@
         //  and all sub-menus on document clicks
         $(document).on('click', function() {
             if (respMenuShown && isMobile()) {
-                $(gConfig.sl.menubar).hide('fast');
+                $(gConfig.sel.menubar).hide('fast');
                 respMenuShown = false;
             }
-            $(gConfig.sl.menubar).find('li')
+            $(gConfig.sel.menubar).find('li')
                                  .removeClass(gConfig.cls.subShown);
         });
 
         // handle link clicks
-        $(gConfig.sl.menubar).on('click', 'li a', function() {
+        $(gConfig.sel.menubar).on('click', 'li a', function() {
             var $li = $(this).parent('li'),
                 $sm = $li.find(gConfig.sel.submenu),
                 loadLink = true;
@@ -46,7 +46,7 @@
 
         // handle menu button click: toggle menu visibility, set state var
         $(gConfig.sel.menuBtn).on('click', function() {
-            $(gConfig.sl.menubar).toggle('fast');
+            $(gConfig.sel.menubar).toggle('fast');
             respMenuShown = !(respMenuShown);
             return false;
         });
@@ -61,7 +61,7 @@
 
         // hide or show menubar on window resize
         $(window).on('resize', function() {
-            $(gConfig.sl.menubar).toggle((!isMobile() || respMenuShown));
+            $(gConfig.sel.menubar).toggle((!isMobile() || respMenuShown));
         });
 
     }
