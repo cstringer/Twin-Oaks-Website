@@ -12,7 +12,8 @@
         "responsive":true,
         "scripts":[
             "/js/jquery-1.8.3.js",
-            "/js/to-jscript.js"
+            "/js/to-jscript.js",
+            "/js/ga.js"
         ],
         "stylesheets":[
             "/css/to-internal.css",
