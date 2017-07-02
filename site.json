@@ -1,0 +1,83 @@
+{
+    "404": {
+        "title":"Page Not Found",
+        "description":"The requested page does not exist.",
+        "file":"content/404.html"
+    },
+
+    "head":{
+        "charset":"utf-8",
+        "favicon":"/img/favicon.gif",
+        "googleSiteVer":"H7tCe8ZmRRYmGw3cyvjTprfX1KCiXEvIJu5QkGTcp9Y",
+        "responsive":true,
+        "scripts":[
+            "/js/jquery-1.8.3.js",
+            "/js/to-jscript.js"
+        ],
+        "stylesheets":[
+            "/css/to-internal.css",
+            "/css/twinoaks.css"
+        ],
+        "titlePrefix":"Twin Oaks Golf Complex -"
+    },
+
+    "titlebar":{
+        "file":"content/titlebar.html"
+    },
+
+    "pages":[
+        {
+            "title":"Home",
+            "description":"A unique golf facility featuring a driving range, par-3 pitch and putt course, and friendly, professional instruction.",
+            "file":"content/home.html",
+            "urlAlias":"/"
+        },
+
+        {
+            "title":"Range",
+            "description":"Our driving range features artificial and natural grass hitting areas.",
+            "file":"content/range.html",
+            "urlAlias":"/range"
+        },
+
+        {
+            "title":"Course",
+            "description":"Play a fast and fun round of golf at the Wakarusa Pitch and Putt course.",
+            "file":"content/course.html",
+            "urlAlias":"/course",
+            "children": [
+                {
+                    "title":"Overview",
+                    "description":"A hole-by-hole guide to the Wakarusa Pitch and Putt golf course.",
+                    "file":"content/course-overview.html",
+                    "urlAlias":"/course/overview"
+                },
+
+                {
+                    "title":"Scorecard",
+                    "description":"The official scorecard of the Wakarusa Pitch and Putt golf course at Twin Oaks Golf Complex in Eudora, KS.",
+                    "file":"content/course-scorecard.html",
+                    "urlAlias":"/course/scorecard"
+                }
+            ]
+        },
+
+        {
+            "title":"Instruction",
+            "description":"Professional instruction for golfers of all skill levels, specializing in introducing kids to the game.",
+            "file":"content/instruction.html",
+            "urlAlias":"/instruction"
+        },
+
+        {
+            "title":"About Us",
+            "description":"Facility hours of operation, driving directions, and contact information.",
+            "file":"content/about_us.html",
+            "urlAlias":"/about_us"
+        }
+    ],
+
+    "footer":{
+        "file":"content/footer.html"
+    }
+}
