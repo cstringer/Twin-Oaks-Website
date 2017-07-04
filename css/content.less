@@ -1,0 +1,61 @@
+/* Content */
+
+@import "variables";
+
+#content {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1024px;
+    overflow: hidden;
+    padding: 5px 10px 2em;
+    width: 90%;
+}
+
+.coursedesc
+{
+    font-size: 1em;
+    line-height: 100%;
+
+    b {
+        color: #006000;
+        font-size: 1em;
+        letter-spacing: 1px;
+        line-height: 130%;
+        margin-left: -3px;
+    }
+}
+
+.imgright {
+    float: right;
+    position: relative;
+    top: -10px;
+    margin: 20px;
+    box-shadow: 4px 4px 5px #888;
+
+    @media (max-width:@resp-width-phone) {
+        .imgright {
+            box-shadow: none;
+            display: block;
+            height: auto;
+            width: 35% !important;
+        }
+    }
+}
+
+.se-titlebig
+{
+    font-size: 1.5em;
+    margin-left: 5px;
+    text-shadow: 2px 2px 0px #202020;
+}
+
+#home-links {
+    @media (max-width:@resp-width-phone) {
+        img {
+            width: 75%;
+            height: auto;
+        }
+    }
+
+}
+

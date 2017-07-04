@@ -30,7 +30,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'css',
                     dest: 'css',
-                    src: ['*.css', '!*.min.css'],
+                    src: ['twinoaks.css'],
                     ext: '.min.css'
                 }]
             }
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
                     expand: true,
                     cwd: 'css',
                     dest: 'css',
-                    src: '*.less',
+                    src: 'twinoaks.less',
                     ext: '.css'
                 }]
             }

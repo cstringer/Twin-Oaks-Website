@@ -1,0 +1,71 @@
+/* About Us */
+
+@import "variables";
+
+#fb-like {
+    background-color: #fafafa;
+    border: 1px solid #eef;
+    border-radius: 3px;
+    display: inline;
+    height: 1.55em;
+    margin: 4px;
+    width: 60%;
+
+    @media (max-width:@resp-width-phone) {
+        width: 100%;
+    }
+}
+
+#fblogo-sm {
+    height: 1em;
+    vertical-align: bottom;
+    width: 1em;
+}
+
+.gmap {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 3px 3px 4px #a0a0a0;
+    float: right;
+    height: 250px;
+    margin-left: 1.5em;
+    position: relative;
+    width: 300px;
+
+    @media (max-width:@resp-width-phone) {
+        .gmap {
+            left: 0;
+            margin-bottom: 1.5em;
+            position: relative;
+            width: 99%;
+            &:after {
+                content: " ";
+                clear: both;
+            }
+        }
+    }
+}
+
+.hours-table {
+    margin: 1em;
+
+    td {
+        &:first-of-type {
+            padding-right: 1em;
+        }
+        &:last-of-type {
+            text-align: right;
+        }
+    }
+}
+
+.ssbold {
+    border-bottom: 2px solid #eee;
+    color: #006;
+    display: block;
+    font-family: Helvetica,Verdana,Arial,sans-serif;
+    font-weight: bold;
+    width: 50%;
+}
+

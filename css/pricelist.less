@@ -1,0 +1,35 @@
+/* Price List */
+
+@import "variables";
+
+.pricelist {
+    background-color: #ffffe9;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 4px #a0a0a0;
+    margin-left: 100px;
+    min-width: 200px;
+
+     th {
+        background-color: #eee;
+        border-bottom: 1px solid #bbb;
+        font-family: Times New Roman, serif;
+        font-size: 0.8em;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eec;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 0.9em;
+        padding-bottom: 3px;
+        padding-left: 6px;
+        padding-right: 6px;
+        padding-top: 5px;
+        text-align: right;
+    }
+
+    @media (max-width:@resp-width-phone) {
+        margin: auto;
+        width: 99%;
+    }
+}
