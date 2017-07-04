@@ -308,7 +308,7 @@ table {
   box-shadow: 4px 4px 5px #888;
 }
 @media (max-width: 566px) {
-  .imgright .imgright {
+  .imgright {
     box-shadow: none;
     display: block;
     height: auto;
@@ -388,13 +388,13 @@ table {
   width: 300px;
 }
 @media (max-width: 566px) {
-  .gmap .gmap {
+  .gmap {
     left: 0;
     margin-bottom: 1.5em;
     position: relative;
     width: 99%;
   }
-  .gmap .gmap:after {
+  .gmap:after {
     content: " ";
     clear: both;
   }
