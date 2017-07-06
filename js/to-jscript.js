@@ -1,7 +1,7 @@
 (function($){
     var gConfig = {
         cls: {
-            subShown: 'sub-shown',
+            subShown: 'submenu-shown',
             touched:  'touched'
         },
         sel: {

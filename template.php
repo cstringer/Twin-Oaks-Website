@@ -2,37 +2,31 @@
 /**
  * Site page template
  */
+
 ?>
 <!doctype html>
 <html>
 
     <head>
     <?php Head();?>
-
     </head>
 
     <body>
-        <div id="titlebar">
         <?php Titlebar();?>
-        </div>
 
-        <div id="nav">
         <?php Nav();?>
-        </div>
 
-        <div id="content">
         <?php Content();?>
-        </div>
 
-        <div id="footer">
         <?php Footer();?>
-        </div>
     </body>
 
 </html>
 <?php
 
+
 /*=== Functions ===*/
+
 
 function Head() {
     global $CurrentPage, $SiteConfig;
@@ -55,8 +49,10 @@ function Head() {
     <?php foreach ($SiteConfig['head']['scripts'] as $js) { ?>
     <script src="<?php echo $js;?>"></script>
     <?php }?>
+
 <?php
 }
+
 
 /**
  * Print the title bar
@@ -69,18 +65,26 @@ function Titlebar() {
     }
 }
 
+
 /**
  * Print the navigation menu
  */
 function Nav() {
     global $Navigation;
 ?>
-<div id="menu-btn"><img src="/img/icon-menu.png"></div>
-<ul id="menubar">
-<?php foreach ($Navigation as $nav) { NavItem($nav); } ?>
-</ul>
+
+<div id="nav">
+
+    <div id="menu-btn"><img src="/img/icon-menu.png"></div>
+    <ul id="menubar">
+    <?php foreach ($Navigation as $nav) { NavItem($nav); } ?>
+    </ul>
+
+</div>
+
 <?php
 }
+
 
 /**
  * Print a single navigation item (<li>) and any submenus
@@ -88,7 +92,7 @@ function Nav() {
 function NavItem($nav) {
     $hasChildren = (is_array($nav['children']) && count($nav['children']) > 0);
 ?>
-<li<?php if ($nav['inPath']) echo ' class="cursec"';?>>
+<li<?php if ($nav['inPath']) echo ' class="in-path"';?>>
     <?php NavLink($nav);?>
     <?php if ($hasChildren) { ?>
     <ul class="submenu">
@@ -96,8 +100,10 @@ function NavItem($nav) {
     </ul>
     <?php } ?>
 </li>
+
 <?php
 }
+
 
 /**
  * Print the link for a navigation item
@@ -111,18 +117,27 @@ function NavLink($nav) {
     <img class="down-arrow" src="/img/smenu-icon.png" alt="">
     <?php } ?>
 </a>
+
 <?php
 }
+
 
 /**
  * Include the current page content file, if set & exists
  */
 function Content() {
     global $CurrentPage;
-    if (isset($CurrentPage['file']) && file_exists($CurrentPage['file'])) {
-        include_once($CurrentPage['file']);
+    if (!isset($CurrentPage['file']) || !file_exists($CurrentPage['file'])) {
+        return;
     }
+?>
+<div id="content">
+<?php include_once($CurrentPage['file']);?>
+</div>
+
+<?php
 }
+
 
 /**
  * Include the site footer content file, if set & exists
@@ -134,4 +149,5 @@ function Footer() {
         include_once($SiteConfig['footer']['file']);
     }
 }
+
 ?>
