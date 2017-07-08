@@ -36,7 +36,7 @@
     {
         font-size: 0.85em;
         margin-left: 12px;
-        margin-top: 8px;
+        margin-top: 2px;
         vertical-align: middle;
     }
 
@@ -54,14 +54,10 @@
         max-width: 1024px;
         width: auto;
 
-        & > a {
-            vertical-align: middle;
-        }
-    }
-
-    @media (min-width:@resp-width-tablet) {
-        .container > a, h1, address {
+        & > a,
+        .info {
             display: inline-block;
+            vertical-align: middle;
         }
     }
 
@@ -69,6 +65,7 @@
         address {
             clear: left;
             display: block;
+            font-size: 10px;
             padding: 0.25em 1em;
             text-align: center;
         }
@@ -77,6 +74,11 @@
             font-size: 18px;
             margin-right: 44px;
             padding: 18px 0 0;
+        }
+
+        .container > a,
+        .info {
+            display: inline !important;
         }
     }
 }

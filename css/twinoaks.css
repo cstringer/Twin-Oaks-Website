@@ -35,10 +35,11 @@ h3 {
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-weight: bolder;
   margin: 4px 0;
-  padding: 10px 0 0 7px;
+  padding: 0 0 0 7px;
 }
 h2 {
   color: #151;
+  padding: 15px 0 0 7px;
 }
 img {
   border: none;
@@ -95,7 +96,7 @@ table {
 #titlebar address {
   font-size: 0.85em;
   margin-left: 12px;
-  margin-top: 8px;
+  margin-top: 2px;
   vertical-align: middle;
 }
 #titlebar h1 {
@@ -111,20 +112,16 @@ table {
   max-width: 1024px;
   width: auto;
 }
-#titlebar .container > a {
+#titlebar .container > a,
+#titlebar .container .info {
+  display: inline-block;
   vertical-align: middle;
-}
-@media (min-width: 768px) {
-  #titlebar .container > a,
-  #titlebar h1,
-  #titlebar address {
-    display: inline-block;
-  }
 }
 @media (max-width: 566px) {
   #titlebar address {
     clear: left;
     display: block;
+    font-size: 10px;
     padding: 0.25em 1em;
     text-align: center;
   }
@@ -132,6 +129,10 @@ table {
     font-size: 18px;
     margin-right: 44px;
     padding: 18px 0 0;
+  }
+  #titlebar .container > a,
+  #titlebar .info {
+    display: inline !important;
   }
 }
 /* Navigation */
@@ -320,10 +321,35 @@ table {
   margin-left: 5px;
   text-shadow: 2px 2px 0px #202020;
 }
+.home-content {
+  float: left;
+  width: 60%;
+}
 @media (max-width: 566px) {
-  #home-links img {
-    width: 75%;
-    height: auto;
+  .home-content {
+    width: 100%;
+  }
+}
+@media (max-width: 566px) {
+  .home-video {
+    height: 200px;
+  }
+}
+#home-links {
+  border-spacing: 0;
+  float: right;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 35%;
+}
+#home-links a {
+  display: block;
+  padding-bottom: 1em;
+}
+@media (max-width: 566px) {
+  #home-links {
+    width: 100%;
   }
 }
 /* Footer */
@@ -417,12 +443,6 @@ table {
   width: 50%;
 }
 /* Links */
-#home-links {
-  border-spacing: 0;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-}
 .linktable {
   margin: auto;
   width: 80%;
